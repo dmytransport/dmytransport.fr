@@ -1,97 +1,105 @@
-/* ===========================
-   DMY TRANSPORT
-   Style Premium
-=========================== */
-
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial,Helvetica,sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
 }
 
 body{
-    background:#f8f9fb;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#ffffff;
     color:#222;
     line-height:1.6;
 }
 
 header{
-    position:fixed;
-    top:0;
-    left:0;
     width:100%;
-    background:#fff;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:20px 60px;
-    box-shadow:0 2px 15px rgba(0,0,0,.08);
-    z-index:999;
+    padding:20px 8%;
+    background:#fff;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 12px rgba(0,0,0,.08);
 }
 
 .logo img{
-    height:70px;
+    height:75px;
+}
+
+nav{
+    display:flex;
+    gap:35px;
 }
 
 nav a{
     text-decoration:none;
     color:#222;
-    margin:0 18px;
     font-weight:600;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#0b5ed7;
 }
 
 .btn-header{
     background:#0b5ed7;
     color:#fff;
-    padding:14px 24px;
-    border-radius:8px;
     text-decoration:none;
-    font-weight:bold;
+    padding:12px 22px;
+    border-radius:8px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-header:hover{
+    background:#084298;
 }
 
 .hero{
-   .héros{
-    hauteur minimale:100vh;
-    afficher:flex;
-    just-content:space entre;
-    aligner les éléments:center;
-    rembourrage:140px 80px 80px;
-    background: url("hero.jpg") center center/cover no-repeat;
-  .héros{
-    ...
-    background: url("hero.jpg") center center/cover no-repeat;
-    position: relative;
-    color:white;
-} 
-   
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:80px 8%;
+    gap:60px;
+    min-height:85vh;
+}
+
+.hero-text{
+    flex:1;
 }
 
 .hero-text h1{
-    font-size:60px;
+    font-size:56px;
     line-height:1.1;
     margin-bottom:25px;
-}
-
-.hero-text span{
-    color:#0b5ed7;
+    color:#111;
 }
 
 .hero-text p{
     font-size:20px;
+    color:#555;
     margin-bottom:35px;
+    max-width:600px;
 }
+
 .buttons{
     display:flex;
     gap:20px;
 }
-
 .btn-blue{
+    display:inline-block;
     background:#0b5ed7;
     color:#fff;
-    padding:16px 30px;
-    border-radius:8px;
     text-decoration:none;
+    padding:15px 30px;
+    border-radius:8px;
     font-weight:bold;
     transition:.3s;
 }
@@ -101,12 +109,13 @@ nav a{
 }
 
 .btn-white{
+    display:inline-block;
     background:#fff;
     color:#0b5ed7;
-    border:2px solid #0b5ed7;
-    padding:16px 30px;
-    border-radius:8px;
     text-decoration:none;
+    padding:15px 30px;
+    border:2px solid #0b5ed7;
+    border-radius:8px;
     font-weight:bold;
     transition:.3s;
 }
@@ -117,17 +126,20 @@ nav a{
 }
 
 .hero-image{
-    width:45%;
-    text-align:center;
+    flex:1;
+    display:flex;
+    justify-content:center;
 }
 
 .hero-image img{
     width:100%;
     max-width:650px;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
 }
 
 .services{
-    padding:100px 80px;
+    padding:90px 8%;
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
     gap:30px;
@@ -137,8 +149,8 @@ nav a{
 .card{
     background:#fff;
     padding:35px;
-    border-radius:16px;
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
     transition:.3s;
 }
 
@@ -149,98 +161,95 @@ nav a{
 .card h3{
     margin-bottom:15px;
     color:#0b5ed7;
-}
-.about{
-    padding:100px 80px;
-    background:#ffffff;
-    text-align:center;
+    font-size:22px;
 }
 
-.about h2{
-    font-size:40px;
-    margin-bottom:25px;
-    color:#0b5ed7;
+.card p{
+    color:#666;
+}
+.about,
+.contact{
+    padding:90px 8%;
+}
+
+.about h2,
+.contact h2{
+    text-align:center;
+    font-size:38px;
+    margin-bottom:30px;
+    color:#111;
 }
 
 .about p{
     max-width:900px;
     margin:auto;
-    font-size:18px;
-}
-
-.contact{
-    padding:100px 80px;
-    background:#f8f9fb;
     text-align:center;
-}
-
-.contact h2{
-    font-size:40px;
-    margin-bottom:30px;
-    color:#0b5ed7;
+    color:#666;
+    font-size:18px;
+    line-height:1.8;
 }
 
 .contact-box{
-    max-width:600px;
-    margin:auto;
+    max-width:650px;
+    margin:40px auto 0;
     background:#fff;
     padding:40px;
-    border-radius:16px;
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    text-align:center;
 }
 
 .contact-box p{
     margin-bottom:18px;
+    font-size:18px;
+    color:#555;
+}
+
+.contact-box .btn-blue{
+    margin-top:20px;
 }
 
 footer{
-    background:#0b5ed7;
+    background:#111;
     color:#fff;
     text-align:center;
     padding:25px;
-    margin-top:50px;
+    margin-top:70px;
 }
 
 @media (max-width:900px){
 
-header{
-    flex-direction:column;
-    gap:20px;
-    padding:20px;
-}
+    header{
+        flex-direction:column;
+        gap:20px;
+    }
 
-nav{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-}
+    nav{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:20px;
+    }
 
-.hero{
-    flex-direction:column;
-    text-align:center;
-    padding:180px 30px 80px;
-}
+    .hero{
+        flex-direction:column;
+        text-align:center;
+        padding:60px 8%;
+    }
 
-.hero-text,
-.hero-image{
-    width:100%;
-}
+    .hero-text h1{
+        font-size:40px;
+    }
 
-.hero-text h1{
-    font-size:42px;
-}
+    .hero-text p{
+        margin:auto auto 30px;
+    }
 
-.hero-image{
-    margin-top:40px;
-}
+    .buttons{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
 
-.services{
-    padding:60px 25px;
-}
-
-.about,
-.contact{
-    padding:60px 25px;
-}
-
+    .hero-image img{
+        max-width:100%;
+    }
 }
